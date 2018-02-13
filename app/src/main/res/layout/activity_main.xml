@@ -15,13 +15,18 @@
                 android:layout_height="wrap_content"
                 android:scaleType="centerInside"
                 android:src="@drawable/bicycle"
-                android:background="@drawable/border_bottom"
                 android:backgroundTint="#FFF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separator_size"
+                android:background="@color/black"/>
 
             <RelativeLayout
                 android:id="@+id/parent_wrapper"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_parent">
 
                 <TextView
                     android:id="@+id/tv_item"
@@ -46,14 +51,16 @@
                     android:layout_height="wrap_content"
                     android:text="@string/activity_main_color_title"
                     android:textSize="@dimen/item_subtitles"
-                    android:layout_alignTop="@id/tv_item"
+                    android:layout_below="@id/tv_item"
                     android:layout_alignParentStart="true" />
 
-                <!--<RadioGroup
+                <RadioGroup
                     android:id="@+id/rd_colors"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true">
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/tv_title_color"
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/rb_color1"
@@ -83,36 +90,39 @@
 
                 <Button
                     android:id="@+id/ib_size1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/size_square"
+                    android:layout_height="@dimen/size_square"
                     android:text="@string/activity_main_size_option1"
                     android:textSize="@dimen/item_sizes"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/rd_colors" />
+                    android:layout_below="@id/rd_colors" />
 
                 <Button
                     android:id="@+id/ib_size2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/size_square"
+                    android:layout_height="@dimen/size_square"
                     android:text="@string/activity_main_size_option2"
                     android:textSize="@dimen/item_sizes"
-                    android:layout_alignStart="@id/ib_size1" />
+                    android:layout_toEndOf="@id/ib_size1"
+                    android:layout_below="@id/rd_colors" />
 
                 <Button
                     android:id="@+id/ib_size3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/size_square"
+                    android:layout_height="@dimen/size_square"
                     android:text="@string/activity_main_size_option3"
                     android:textSize="@dimen/item_sizes"
-                    android:layout_alignStart="@id/ib_size2" />
+                    android:layout_toEndOf="@id/ib_size2"
+                    android:layout_below="@id/rd_colors" />
 
                 <Button
                     android:id="@+id/ib_size4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/size_square"
+                    android:layout_height="@dimen/size_square"
                     android:text="@string/activity_main_size_option4"
                     android:textSize="@dimen/item_sizes"
-                    android:layout_alignStart="@id/ib_size3" />
+                    android:layout_toEndOf="@id/ib_size3"
+                    android:layout_below="@id/rd_colors"/>
 
                 <TextView
                     android:id="@+id/tv_title_description"
@@ -121,7 +131,7 @@
                     android:text="@string/activity_main_description_title"
                     android:textSize="@dimen/item_subtitles"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/ib_size1" />
+                    android:layout_below="@id/ib_size1" />
 
                 <TextView
                     android:id="@+id/tv_content_description"
@@ -130,7 +140,7 @@
                     android:text="@string/activity_main_description_content"
                     android:textSize="@dimen/item_contents"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/tv_title_description" />
+                    android:layout_below="@id/tv_title_description" />
 
                 <TextView
                     android:id="@+id/tv_title_measure"
@@ -139,7 +149,7 @@
                     android:text="@string/activity_main_measure_title"
                     android:textSize="@dimen/item_subtitles"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/tv_content_description" />
+                    android:layout_below="@id/tv_content_description" />
 
                 <TextView
                     android:id="@+id/tv_content_measure"
@@ -148,7 +158,7 @@
                     android:text="@string/activity_main_measure_content"
                     android:textSize="@dimen/item_contents"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/tv_title_measure" />
+                    android:layout_below="@id/tv_title_measure" />
 
                 <Button
                     android:id="@+id/btn_add_Cart"
@@ -157,14 +167,12 @@
                     android:text="@string/activity_main_button_text"
                     android:background="@color/gray_dark"
                     android:layout_alignParentStart="true"
-                    android:layout_alignTop="@id/tv_content_measure" />-->
+                    android:layout_below="@id/tv_content_measure" />
 
             </RelativeLayout>
 
 
         </LinearLayout>
-
-
 
     </ScrollView>
 </layout>
