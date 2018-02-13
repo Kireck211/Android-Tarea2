@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/bicycle"
+                android:background="@drawable/border_bottom"
+                android:backgroundTint="#FFF"/>
+
+            <RelativeLayout
+                android:id="@+id/parent_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_item_title"
+                    android:textSize="@dimen/item_title"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageButton
+                    android:id="@+id/ib_like"
+                    android:layout_width="@dimen/like_size"
+                    android:layout_height="@dimen/like_size"
+                    android:src="@drawable/like"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/tv_title_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_color_title"
+                    android:textSize="@dimen/item_subtitles"
+                    android:layout_alignTop="@id/tv_item"
+                    android:layout_alignParentStart="true" />
+
+                <!--<RadioGroup
+                    android:id="@+id/rd_colors"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true">
+
+                    <RadioButton
+                        android:id="@+id/rb_color1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/gray" />
+
+                    <RadioButton
+                        android:id="@+id/rb_color2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/brown" />
+
+                    <RadioButton
+                        android:id="@+id/rb_color3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/pink" />
+
+                    <RadioButton
+                        android:id="@+id/rb_color4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/black" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/ib_size1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_size_option1"
+                    android:textSize="@dimen/item_sizes"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/rd_colors" />
+
+                <Button
+                    android:id="@+id/ib_size2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_size_option2"
+                    android:textSize="@dimen/item_sizes"
+                    android:layout_alignStart="@id/ib_size1" />
+
+                <Button
+                    android:id="@+id/ib_size3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_size_option3"
+                    android:textSize="@dimen/item_sizes"
+                    android:layout_alignStart="@id/ib_size2" />
+
+                <Button
+                    android:id="@+id/ib_size4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_size_option4"
+                    android:textSize="@dimen/item_sizes"
+                    android:layout_alignStart="@id/ib_size3" />
+
+                <TextView
+                    android:id="@+id/tv_title_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_description_title"
+                    android:textSize="@dimen/item_subtitles"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/ib_size1" />
+
+                <TextView
+                    android:id="@+id/tv_content_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_description_content"
+                    android:textSize="@dimen/item_contents"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/tv_title_description" />
+
+                <TextView
+                    android:id="@+id/tv_title_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_measure_title"
+                    android:textSize="@dimen/item_subtitles"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/tv_content_description" />
+
+                <TextView
+                    android:id="@+id/tv_content_measure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_measure_content"
+                    android:textSize="@dimen/item_contents"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/tv_title_measure" />
+
+                <Button
+                    android:id="@+id/btn_add_Cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_main_button_text"
+                    android:background="@color/gray_dark"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@id/tv_content_measure" />-->
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</layout>

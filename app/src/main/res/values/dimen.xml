@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_title">40sp</dimen>
+    <dimen name="item_subtitles">20sp</dimen>
+    <dimen name="item_contents">15sp</dimen>
+    <dimen name="item_sizes">15sp</dimen>
+    <dimen name="like_size">20dp</dimen>
+</resources>
