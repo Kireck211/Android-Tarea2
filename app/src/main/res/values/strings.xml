@@ -11,4 +11,9 @@
     <string name="activity_main_measure_title">MEASUREMENT</string>
     <string name="activity_main_measure_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="activity_main_button_text">add to cart</string>
+    <string name="activity_main_button_selected_text">added to cart</string>
+    <string name="activity_main_toast_like">+1 to Vintage Bicycle</string>
+    <string name="activity_main_snackbar_confirmation">Added to cart</string>
+    <string name="activity_main_snackbar_undo">undo</string>
+    <string name="activity_main_item_already_added">Item already is in Cart!</string>
 </resources>

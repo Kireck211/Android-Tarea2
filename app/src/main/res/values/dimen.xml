@@ -2,12 +2,20 @@
 <resources>
     <dimen name="item_title">25sp</dimen>
     <dimen name="item_subtitles">15sp</dimen>
-    <dimen name="item_contents">10sp</dimen>
+    <dimen name="item_contents">12sp</dimen>
     <dimen name="item_sizes">15sp</dimen>
     <dimen name="size_square">45dp</dimen>
-    <dimen name="like_size">30dp</dimen>
+    <dimen name="like_size">40dp</dimen>
     <dimen name="size_padding">2dp</dimen>
     <dimen name="size_margin">5dp</dimen>
     <dimen name="separator_size">1dp</dimen>
     <dimen name="padding_parent">10dp</dimen>
+    <dimen name="padding_button_cart_top_bottom">5dp</dimen>
+    <dimen name="padding_button_cart_start_end">30dp</dimen>
+    <dimen name="margin_bottom_tittle">15dp</dimen>
+    <dimen name="margin_separator_line">10dp</dimen>
+    <dimen name="margin_bottom_top_elements">7dp</dimen>
+    <dimen name="margin_bottom_top_text">10dp</dimen>
+    <dimen name="corners_rounded">5dp</dimen>
+    <dimen name="margin_buttons">10dp</dimen>
 </resources>
