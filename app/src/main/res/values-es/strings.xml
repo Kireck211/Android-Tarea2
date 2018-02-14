@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+    <string name="activity_main_item_title">BICICLETA VINTAGE</string>
+    <string name="activity_main_color_title">COLOR</string>
+    <string name="activity_main_size_option1">P</string>
+    <string name="activity_main_size_option2">M</string>
+    <string name="activity_main_size_option3">G</string>
+    <string name="activity_main_size_option4">XG</string>
+    <string name="activity_main_description_title">DESCRIPCION</string>
+    <string name="activity_main_description_content">Bastidor de acero ligero personalizado. Sin restaurar en hermosa condición original. Ligeramente usado y bien cuidado. Completa creación de súper registro.</string>
+    <string name="activity_main_measure_title">MEDIDAS</string>
+    <string name="activity_main_measure_content">Ex vitae menandri eum, postea deserunt ex mel, unum aperiam sensibus eum in. Eam perfecto necessitatibus ne, usu ex petentium expetenda. Modus melius officiis eum an. Ne eam hinc quidam, quod singulis molestiae ea pri. Vix cu tempor feugait, erroribus signiferumque te vis. Eos at adhuc dolor laoreet, cu pri tation percipit.</string>
+    <string name="activity_main_button_text">agregar al carrito</string>
+    <string name="activity_main_button_selected_text">agregado al carrito</string>
+    <string name="activity_main_toast_like">+1 a la Bicicleta Vintage</string>
+    <string name="activity_main_snackbar_confirmation">Agregado al carrito</string>
+    <string name="activity_main_snackbar_undo">deshacer</string>
+    <string name="activity_main_item_already_added">Este elemento ya se encuentra en el carrito!</string>
+</resources>
